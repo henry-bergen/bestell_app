@@ -1,0 +1,92 @@
+#miniImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.miniImg {
+    width: 100%;
+    max-width: 160px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#img14,
+#img10 {
+    object-position: bottom;
+}
+
+#bigImgDialog[open] {
+    height: 900px;
+    width: 900px;
+    border: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dialogContent {
+    height: 100%;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    display: none;
+}
+
+.bigImg {
+    max-height: 700px;
+    max-width: 700px;
+}
+
+@media(max-width: 1280px) {
+
+    .miniImg {
+        width: 100%;
+        max-width: 140px;
+    }
+
+    #bigImgDialog[open] {
+        height: 700px;
+        width: 700px;
+    }
+
+    .bigImg {
+        max-height: 500px;
+        max-width: 500px;
+
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    .miniImg {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    #bigImgDialog[open] {
+        height: 450px;
+        width: 450px;
+    }
+
+    .bigImg {
+        max-height: 250px;
+        max-width: 250px;
+
+    }
+
+    .toggle {
+        display: flex;
+    }
+
+}

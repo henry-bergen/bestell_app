@@ -1,0 +1,29 @@
+.logo {
+  height: 50px;
+  transition: all 100ms ease-in-out;
+}
+
+.logo:hover {
+  height: 51px;
+}
+
+.slogan {
+  font-size: 20px;
+  font-weight: 550;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 40px;
+  }
+
+  .logo:hover {
+    height: 33px;
+  }
+
+  .slogan {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
