@@ -1,6 +1,6 @@
 let dishes = [
   {
-    name: "borsch",
+    name: "Borsch",
     price: "12,50",
     description:
       "Traditioneller Rote-Bete-Eintopf aus Rinderbrühe und Gemüse, dazu Sauerteigbrot und Schmand",
@@ -28,27 +28,27 @@ let dishes = [
     description: "Gefüllte Teigtaschen mit Hackfleisch & Butterzwiebeln",
   },
   {
-    name: "Rheinischer Sauerbraten mit Kartoffelklößen und Soß",
-    price: "16,50",
-    description: "Braten, Klöße, dazu Rosinensauce und Rotkohl",
-  },
-  {
     name: "Schaschlik",
     price: "15,90",
     description:
       "Marinierte Fleischspieße vom Grill mit Zwiebeln, Tomaten und hausgemachter Sauce",
   },
   {
-    name: "Galubzij",
-    price: "13,50",
-    description:
-      "Kohlrouladen mit Hackfleisch und Reisfüllung, in kräftiger Tomatensauce",
+    name: "Rheinischer Sauerbraten mit Kartoffelklößen und Soß",
+    price: "16,50",
+    description: "Braten, Klöße, dazu Rosinensauce und Rotkohl",
   },
   {
     name: "Plov",
     price: "14,20",
     description:
       "Asiatisches Reisgericht nach kasachischer Art, mit Lamm, Karotten und Zwiebeln ",
+  },
+  {
+    name: "Galubzij",
+    price: "13,50",
+    description:
+      "Kohlrouladen mit Hackfleisch und Reisfüllung, in kräftiger Tomatensauce",
   },
   {
     name: "Kölsche Rievkooche",

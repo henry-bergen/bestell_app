@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <script src="./scripts/db.js" defer></script>
+    <script src="./scripts/template.js" defer></script>
     <script src="./scripts/script.js" defer></script>
   </head>
 
@@ -24,7 +26,34 @@
 
     <main>
       <div class="mainContent">
-        <h1>Borsch und Bergen</h1>
+        <section class="orderSection">
+          <!-- Hero-Bereich -->
+          <div class="heroContainer">
+            <img
+              class="heroImg"
+              src="./assets/borschBergen_heroImg.png"
+              alt="HeroImg"
+            />
+            <div class="restaurantInfo">
+              <h1>Borsch & Bergen</h1>
+              <p class="rating">Bewertung (4,8 von 5 Sternen)</p>
+              <div id="dishes"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Warenkorb -->
+        <section class="basketSection">
+          <div class="basketContent">
+            <h2>Warenkorb</h2>
+            <div class="basketItem"></div>
+            <div class="basketSummary">
+              <p>Zwischensumme</p>
+              <p>Lieferkosten</p>
+              <p><strong>Gesamt</strong></p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 
