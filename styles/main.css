@@ -1,5 +1,4 @@
 /* --- Hero Bereich --- */
-
 .orderSection {
   width: calc(100% - 300px);
 }
@@ -26,7 +25,6 @@
 }
 
 /* --- Gericht-Karten --- */
-
 #dishes {
   display: flex;
   flex-direction: column;
@@ -91,25 +89,28 @@ p {
 
 /* --- Warenkorb --- */
 .basketSection {
-  position: relative;
+  position: sticky;
+  top: 0;
   border-left: 1px solid #ddd;
   padding: 24px;
   width: 300px;
   flex-grow: 1;
-}
-
-.basketContent {
-  position: sticky;
+  min-height: 100vh;
 }
 
 .basketItem {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 8px;
 }
 
-/* .qtyControl {
+.basketItemNumbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qtyControl {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -123,7 +124,19 @@ p {
   width: 24px;
   height: 24px;
   cursor: pointer;
-} */
+}
+
+/* --- Warenkorb Summary --- */
+.basketSummaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.basketSummaryItem .dishPrice {
+  color: #ff8000;
+}
 
 @media (max-width: 1280px) {
 }
